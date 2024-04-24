@@ -11,8 +11,8 @@
 		331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C807B294A618700263BE5 /* RunnerTests.swift */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		63224FEE2B8C6A52001708DC /* ViewTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63224FED2B8C6A52001708DC /* ViewTypeViewController.xib */; };
-		6342BAC12BA295670042DC1F /* PincruxOfferwall.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6342BAC02BA295670042DC1F /* PincruxOfferwall.xcframework */; };
-		6342BAC22BA295670042DC1F /* PincruxOfferwall.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6342BAC02BA295670042DC1F /* PincruxOfferwall.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6387B37D2BD780B90027F695 /* PincruxOfferwall.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6387B37C2BD780B90027F695 /* PincruxOfferwall.xcframework */; };
+		6387B37E2BD780B90027F695 /* PincruxOfferwall.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6387B37C2BD780B90027F695 /* PincruxOfferwall.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63AA60712B7B5E820077AF5E /* ViewTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AA60702B7B5E820077AF5E /* ViewTypeViewController.swift */; };
 		63AA60732B7C52FD0077AF5E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AA60722B7C52FD0077AF5E /* AdSupport.framework */; };
 		63AA60752B7C530B0077AF5E /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AA60742B7C530B0077AF5E /* AppTrackingTransparency.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -35,13 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6342BABF2B9FE0EB0042DC1F /* Embed Frameworks */ = {
+		6387B37B2BD64A8D0027F695 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6342BAC22BA295670042DC1F /* PincruxOfferwall.xcframework in Embed Frameworks */,
+				6387B37E2BD780B90027F695 /* PincruxOfferwall.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +57,7 @@
 		331C8081294A63A400263BE5 /* RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		63224FED2B8C6A52001708DC /* ViewTypeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewTypeViewController.xib; sourceTree = "<group>"; };
-		6342BAC02BA295670042DC1F /* PincruxOfferwall.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PincruxOfferwall.xcframework; path = Frameworks/PincruxOfferwall.xcframework; sourceTree = "<group>"; };
+		6387B37C2BD780B90027F695 /* PincruxOfferwall.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PincruxOfferwall.xcframework; path = Frameworks/PincruxOfferwall.xcframework; sourceTree = "<group>"; };
 		63AA60702B7B5E820077AF5E /* ViewTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTypeViewController.swift; sourceTree = "<group>"; };
 		63AA60722B7C52FD0077AF5E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		63AA60742B7C530B0077AF5E /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
@@ -94,7 +94,7 @@
 			files = (
 				63AA60752B7C530B0077AF5E /* AppTrackingTransparency.framework in Frameworks */,
 				A4E4D4751790C5EF54E39655 /* Pods_Runner.framework in Frameworks */,
-				6342BAC12BA295670042DC1F /* PincruxOfferwall.xcframework in Frameworks */,
+				6387B37D2BD780B90027F695 /* PincruxOfferwall.xcframework in Frameworks */,
 				63AA60732B7C52FD0077AF5E /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,7 +183,7 @@
 		CF3E1E297DBBCB5C08381E36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6342BAC02BA295670042DC1F /* PincruxOfferwall.xcframework */,
+				6387B37C2BD780B90027F695 /* PincruxOfferwall.xcframework */,
 				63AA60742B7C530B0077AF5E /* AppTrackingTransparency.framework */,
 				63AA60722B7C52FD0077AF5E /* AdSupport.framework */,
 				6ACBC5BB57793EBC8C1C245B /* Pods_Runner.framework */,
@@ -219,7 +219,7 @@
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
 				6A99C62BF7861E783DB452FA /* [CP] Check Pods Manifest.lock */,
-				6342BABF2B9FE0EB0042DC1F /* Embed Frameworks */,
+				6387B37B2BD64A8D0027F695 /* Embed Frameworks */,
 				9740EEB61CF901F6004384FC /* Run Script */,
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
