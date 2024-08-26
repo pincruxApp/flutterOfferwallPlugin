@@ -154,8 +154,9 @@ class _OfferwallState extends State<Offerwall> {
       // BAR_PREMIUM, PREMIUM 타입은 아래 옵션과 상관없이 광고 상세 화면으로 이동합니다.
       PincruxOfferwallPlugin.setAdDetail(true);
 
-      // 이용 동의 철회 기능으로 삭제됨
-      //PincruxOfferwallPlugin.setDisableTermsPopup(false);
+      // Android 충전소 최소 진입시 권한 팝업을 생략할 수 있습니다.
+      // iOS에서는 AppTrackingTransparency가 있으므로 최초 진입시 권한 팝업이 뜨지 않습니다.
+      PincruxOfferwallPlugin.setDisableTermsPopup(false);
 
       // 충전소에서 CPS 광고를 제거하거나 노출합니다.
       PincruxOfferwallPlugin.setDisableCPS(false);
