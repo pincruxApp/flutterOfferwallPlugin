@@ -264,6 +264,7 @@ SWIFT_PROTOCOL("_TtP16PincruxOfferwall25OfferwallViewTypeDelegate_")
 - (void)offerwallInitFailed:(NSInteger)errCode;
 - (void)offerwallReceived:(UIView * _Nonnull)offerwallView;
 - (void)offerwallAction;
+- (void)offerwallReqClose;
 @end
 
 @class UIViewController;
@@ -293,6 +294,7 @@ SWIFT_CLASS("_TtC16PincruxOfferwall19PincruxOfferwallSDK")
 - (void)setDarkMode:(enum DarkMode)currentDarkMode;
 - (void)enterForeground;
 - (void)setOfferwallCategory:(enum OfferwallCategory)category;
+- (void)setUseSafeArea:(BOOL)useSafeArea;
 - (void)getAdPoint SWIFT_DEPRECATED;
 - (void)getAdPoint:(NSString * _Nonnull)pubkey;
 - (void)destroyView;
@@ -305,6 +307,7 @@ SWIFT_CLASS("_TtC16PincruxOfferwall19PincruxOfferwallSDK")
 - (void)offerwallInitFailed:(NSInteger)errCode;
 - (void)offerwallReceived:(UIView * _Nonnull)offerwallView;
 - (void)offerwallAction;
+- (void)offerwallReqClose;
 @end
 
 

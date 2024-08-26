@@ -62,13 +62,6 @@ class PincruxOfferwallPlugin {
     await _channel.invokeMethod("setAdDetail", {'isEnable': isEnable});
   }
 
-  static void setDisableTermsPopup(bool isDisable) async {
-    if (Platform.isAndroid) {
-      await _channel
-          .invokeMethod("setDisableTermsPopup", {'isDisable': isDisable});
-    }
-  }
-
   static void setDisableCPS(bool isDisable) async {
     await _channel.invokeMethod("setDisableCPS", {'isDisable': isDisable});
   }

@@ -46,6 +46,12 @@ class ViewTypeViewController : UIViewController {
 }
 
 extension ViewTypeViewController: OfferwallViewTypeDelegate {
+    func offerwallReqClose() {
+        print("offerwallReqClose")
+        self.offerwall?.destroyView()
+        self.dismiss(animated: true)
+    }
+    
     func offerwallInitSuccess() {
         print("offerwallInitSuccess")
     }

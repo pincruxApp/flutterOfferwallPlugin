@@ -2,7 +2,7 @@ import UIKit
 import Flutter
 import PincruxOfferwall
 
-@UIApplicationMain
+@main
 @objc class AppDelegate: FlutterAppDelegate {
     var offerwall: PincruxOfferwallSDK?
     

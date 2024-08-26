@@ -8,6 +8,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.LinearLayoutCompat;
 
+import com.example.pincrux_offerwall_flutter_plugin.R;
 import com.pincrux.offerwall.PincruxOfferwall;
 import com.pincrux.offerwall.ui.common.impl.PincruxCloseImpl;
 
@@ -36,6 +37,7 @@ public class ViewTypeActivity extends AppCompatActivity {
             public void onPermissionDenied() {
                 // 충전소 최초 진입시 동의 팝업에서 거부를 선택
                 Log.i(TAG, "onPermissionDenied");
+                finish();
             }
 
             @Override
