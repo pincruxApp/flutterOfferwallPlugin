@@ -145,6 +145,7 @@ class _OfferwallState extends State<Offerwall> {
       PincruxOfferwallPlugin.setOfferwallTitle("Flutter 충전소");
 
       // 충전소 테마 컬러(앞에 #을 생략해도되며 6자리 컬러를 입력하세요.)
+      // 테마 컬러를 설정하지 않으면 PINCRUX 서버에 지정된 매체별 테마색상이 적용됩니다.
       PincruxOfferwallPlugin.setOfferwallThemeColor("#3383FD");
 
       // 충전소 광고리스트에서 맨위로 버튼을 보이거나 숨깁니다.

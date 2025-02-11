@@ -93,13 +93,6 @@ public class MainActivity extends FlutterActivity {
                             break;
                         }
 
-                        // 개인정보 수집 및 이용 동의 기능으로 인해 삭제됨
-//                        case "setDisableTermsPopup": {
-//                            boolean isDisable = call.argument("isDisable");
-//                            offerwall.setDisableTermsPopup(isDisable);
-//                            break;
-//                        }
-
                         case "setDisableCPS": {
                             boolean isDisable = call.argument("isDisable");
                             offerwall.setDisableCPS(isDisable);
