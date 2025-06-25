@@ -50,7 +50,7 @@ class _Pubkey extends State<Pubkey> {
     var pubkeyText;
     preferences = await SharedPreferences.getInstance();
     pubkeyText = preferences.get('pubkey');
-    return pubkeyText;
+    return pubkeyText ?? "";
   }
 
   @override
@@ -58,7 +58,7 @@ class _Pubkey extends State<Pubkey> {
     super.initState();
 
     WidgetsBinding.instance.addPostFrameCallback((_) async {
-      textController.text = await getPubkey();
+      textController.text = await getPubkey() ?? "";
     });
   }
 
