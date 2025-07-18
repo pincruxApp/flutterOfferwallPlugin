@@ -128,6 +128,11 @@ import PincruxOfferwall
                     }
                 }
                 
+            case "closeOfferwall":
+                if self.isOfferwallNotNil() {
+                    self.offerwall?.closeOfferwall()
+                }
+                
             default:
                 result(FlutterMethodNotImplemented)
             }

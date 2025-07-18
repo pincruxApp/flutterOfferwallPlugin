@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/PincruxOfferwall-Swift.h</key>
 		<data>
-		l05ELXZQS0SVLnsbjXUTaPOn9rY=
+		o9VgtFzZCZqlb4KS6OhxoVvtOPE=
 		</data>
 		<key>Headers/PincruxOfferwallSDK.h</key>
 		<data>
@@ -26,15 +26,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5BCQ4PYnXP41WhU01KDxBJ0/5nY=
+		NcmV0WJ2NQa9Oyuzim2FIM4PyWo=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		jUiWoIWq73Y1BJUbA7PZIwYyggI=
+		4soM5y98TcZDwPyFjonCeyDBfJY=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		z6dt/SOpPStXV38x0NplR6nQ2K8=
+		nPAlzUYvEB111wkygw7N10qqiB0=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		z6dt/SOpPStXV38x0NplR6nQ2K8=
+		nPAlzUYvEB111wkygw7N10qqiB0=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lhFakWTqwo8RZGM+AwPcB2K3CJw=
+		O3KEsDiS3pakDRhIWbDa8uDZZLg=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jUiWoIWq73Y1BJUbA7PZIwYyggI=
+		4soM5y98TcZDwPyFjonCeyDBfJY=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		pNq78ZoVgz4rgE/uelKwSVePiZY=
+		zuyc4mtP4YCRih0lfhFw/TBd4IQ=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pNq78ZoVgz4rgE/uelKwSVePiZY=
+		zuyc4mtP4YCRih0lfhFw/TBd4IQ=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		A5rQuGZlSZyM+884EvM1C7Su+1s=
+		p5hI1K5HVriq9CpQ4cDZCk/xI4A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -569,7 +569,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tytj/qwg1oFaK/S3yKOgoAKaadDR7xmGUHOGf3pswPk=
+			ZJG/7/qt9PNq6ciHkMdv2s4nIQy9uRb/YyiFADsnuIQ=
 			</data>
 		</dict>
 		<key>Headers/PincruxOfferwallSDK.h</key>
@@ -583,14 +583,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kCfzefVOtKgw33stpDlSMazxaA1UDaFtUSD4N0FWGMU=
+			wWfi5I2az5m8CPXn9h8LYL0Rfb9pkWnGLTNctwWwOBo=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gq18WAjyOQEvCmzjdzOUOLpNSYnP6RE/ZOA33ZAhgDk=
+			zsTxOpP/9ISqeihLBZ8kNCCEX1q5EGSK/JL/6VuRFAo=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -604,28 +604,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gq18WAjyOQEvCmzjdzOUOLpNSYnP6RE/ZOA33ZAhgDk=
+			zsTxOpP/9ISqeihLBZ8kNCCEX1q5EGSK/JL/6VuRFAo=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IHXbkhGD4E8evhkoGsUnt0LmNEdKyaqTAYKsuV8B0Z8=
+			AFLbfjkNwcm37BWkM2FwyMKeV8ZkrcseMdK5qHz2MrI=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kCfzefVOtKgw33stpDlSMazxaA1UDaFtUSD4N0FWGMU=
+			wWfi5I2az5m8CPXn9h8LYL0Rfb9pkWnGLTNctwWwOBo=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7PotGoZAvs8AtwLBqZ/i8r2609GbfLZN22T4LZUoBg4=
+			/wUeaDoxgQNHOfKGhZ2mCjyDanSd4VYsiXd3rliw68Y=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -639,14 +639,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7PotGoZAvs8AtwLBqZ/i8r2609GbfLZN22T4LZUoBg4=
+			/wUeaDoxgQNHOfKGhZ2mCjyDanSd4VYsiXd3rliw68Y=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uz0DQeTCJI6WTRBtRGthGlQM/r2gECSM/ZrKHvLZ4bQ=
+			0klV/7tVSHhXnjR0a/fuKwW0JoPUkxf33K9fhPJGZOY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

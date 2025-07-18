@@ -69,4 +69,10 @@ class PincruxOfferwallPlugin {
   static void setDarkMode(int mode) async {
     await _channel.invokeMethod("setDarkMode", {'mode': mode});
   }
+
+  static void closeOfferwall() async {
+    if (Platform.isIOS) {
+      await _channel.invokeMethod("closeOfferwall");
+    }
+  }
 }
