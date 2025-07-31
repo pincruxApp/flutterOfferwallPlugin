@@ -19,8 +19,8 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
-		A713A03B2E2A379600C60415 /* PincruxOfferwall.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A713A03A2E2A379600C60415 /* PincruxOfferwall.xcframework */; };
-		A713A03C2E2A379600C60415 /* PincruxOfferwall.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A713A03A2E2A379600C60415 /* PincruxOfferwall.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7B11DD12E3B5E6B00688752 /* PincruxOfferwall.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B11DD02E3B5E6B00688752 /* PincruxOfferwall.xcframework */; };
+		A7B11DD22E3B5E6C00688752 /* PincruxOfferwall.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7B11DD02E3B5E6B00688752 /* PincruxOfferwall.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA032C7F7801D78692659A1B /* Pods_RunnerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6706915FB249DEA0DED7D3D5 /* Pods_RunnerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A713A03C2E2A379600C60415 /* PincruxOfferwall.xcframework in Embed Frameworks */,
+				A7B11DD22E3B5E6C00688752 /* PincruxOfferwall.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +75,7 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A713A03A2E2A379600C60415 /* PincruxOfferwall.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PincruxOfferwall.xcframework; path = Frameworks/PincruxOfferwall.xcframework; sourceTree = "<group>"; };
+		A7B11DD02E3B5E6B00688752 /* PincruxOfferwall.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PincruxOfferwall.xcframework; path = Frameworks/PincruxOfferwall.xcframework; sourceTree = "<group>"; };
 		C64E89672A0A069AD90A0269 /* Pods-RunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.release.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +94,7 @@
 			files = (
 				6395D7802C785C8600746AAC /* AppTrackingTransparency.framework in Frameworks */,
 				898138CE93D9AAD8728B1D8F /* Pods_Runner.framework in Frameworks */,
-				A713A03B2E2A379600C60415 /* PincruxOfferwall.xcframework in Frameworks */,
+				A7B11DD12E3B5E6B00688752 /* PincruxOfferwall.xcframework in Frameworks */,
 				6395D77E2C785C7D00746AAC /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +122,7 @@
 		8720373AE4D149BBEF000A37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A713A03A2E2A379600C60415 /* PincruxOfferwall.xcframework */,
+				A7B11DD02E3B5E6B00688752 /* PincruxOfferwall.xcframework */,
 				6395D77F2C785C8600746AAC /* AppTrackingTransparency.framework */,
 				6395D77D2C785C7D00746AAC /* AdSupport.framework */,
 				0AC16BAA3537A6648B7C9D6B /* Pods_Runner.framework */,
@@ -344,13 +344,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

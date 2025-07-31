@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		l0KD8Mjxktufv6DsXk2lvVRJ3js=
+		wE9luO+GDIsHejxZEPtA34o+JMg=
 		</data>
 		<key>BasicNavigationView.nib</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NcmV0WJ2NQa9Oyuzim2FIM4PyWo=
+		eLQ/+gtgCymjcTYvikT8OpIqB50=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4soM5y98TcZDwPyFjonCeyDBfJY=
+		0QQWmngfQlQ5nscSO/OLBtryEMI=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		O3KEsDiS3pakDRhIWbDa8uDZZLg=
+		7VF0YyDoZ7kVPU1q3fHzj9qciGk=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4soM5y98TcZDwPyFjonCeyDBfJY=
+		0QQWmngfQlQ5nscSO/OLBtryEMI=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		p5hI1K5HVriq9CpQ4cDZCk/xI4A=
+		K90lB4KTQJKeQ9wSoHtiEaEOTFo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>PincruxCollectionViewControllerBase.nib</key>
 		<data>
-		kFNSuv3B2940WoB1+HN3Z56D3+E=
+		l3lKewS6h7vMnUcXHfR4w6PgpEc=
 		</data>
 		<key>PincruxContactStoryBoard.storyboardc/3c2-fH-rxY-view-2Yk-6Y-sEu.nib</key>
 		<data>
-		CwcVojXpn+bNzhxQP+5DIvDgpe0=
+		PZ+xHyqd+EJagWscsD35OaBgZG4=
 		</data>
 		<key>PincruxContactStoryBoard.storyboardc/Info.plist</key>
 		<data>
@@ -302,7 +302,7 @@
 		</data>
 		<key>PincruxSortViewIbk.nib</key>
 		<data>
-		AwP2m8rMD0P3sipX+cFfjHmMJN4=
+		s8iFHVed/N8/J4zFxuZMggtZ9nk=
 		</data>
 		<key>PincruxTableViewCellBar.nib</key>
 		<data>
@@ -322,7 +322,7 @@
 		</data>
 		<key>PincruxTableViewCellIbk.nib</key>
 		<data>
-		35WxMXE5GK65mXAThXj70uuyhgM=
+		Q5Q9Cmmyf2vAN0UYTvbM+IdTWcI=
 		</data>
 		<key>PincruxTableViewCellLandBar.nib</key>
 		<data>
@@ -358,7 +358,7 @@
 		</data>
 		<key>PincruxTermsView.nib</key>
 		<data>
-		KWRfpXQtiZYdYJ25AtLVLne4tGk=
+		dJYISqfyrurHZUzbO3b/xIN1xPc=
 		</data>
 		<key>PincruxTextBannerCellDefault.nib</key>
 		<data>
@@ -548,7 +548,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y6g0Lkvsl7ScPE5BcLt2gqDm/MGPWVsEVP0nelraZ7Q=
+			geZPQ3pMhFN46NkmUY/YLSsxmj2sPCsiLIow8KX6XbY=
 			</data>
 		</dict>
 		<key>BasicNavigationView.nib</key>
@@ -583,7 +583,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wWfi5I2az5m8CPXn9h8LYL0Rfb9pkWnGLTNctwWwOBo=
+			juf13qCvbSdn+iQiEzh0XkQNmM/2Xu1y9069kn9JhKQ=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -611,14 +611,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AFLbfjkNwcm37BWkM2FwyMKeV8ZkrcseMdK5qHz2MrI=
+			/99+eac4VUaoOQdxuXniAYEnXgLTTRITGS43fyxRQzE=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wWfi5I2az5m8CPXn9h8LYL0Rfb9pkWnGLTNctwWwOBo=
+			juf13qCvbSdn+iQiEzh0XkQNmM/2Xu1y9069kn9JhKQ=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -646,7 +646,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0klV/7tVSHhXnjR0a/fuKwW0JoPUkxf33K9fhPJGZOY=
+			E4gukEJtlCmnaEJ0bE3adRgmZiGt7GWL6QaBAf5E3m0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -695,14 +695,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/PI+I4n6D/ziH7vXQzBUnarAooAeVBKzGuLXJ2USrl0=
+			ZfhS0HksZ56Qm8FE6HBcbU6r7dPdwxPAkcC3CjrDGkQ=
 			</data>
 		</dict>
 		<key>PincruxContactStoryBoard.storyboardc/3c2-fH-rxY-view-2Yk-6Y-sEu.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3SaJ/OwIGc9griLlUnvy9necYi+/1FJSClodz+4I6vA=
+			ZkxrgrnFjfj5EF4D6XfaSKmncrIE1DNOR2wRUUYPLP8=
 			</data>
 		</dict>
 		<key>PincruxContactStoryBoard.storyboardc/Info.plist</key>
@@ -1059,7 +1059,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7MZOhfin0Qqe+9CLWvzsJhZadA2DtvCpUqQOp/5OH1Y=
+			cu67dxxTcmd+16JRVzgsQEjPN8MLkPW5zCQebs+7AzM=
 			</data>
 		</dict>
 		<key>PincruxTableViewCellBar.nib</key>
@@ -1094,7 +1094,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dN1590kXjKH4ovk5tUX49oQ47vS2meYC23rlEnWtVcY=
+			o98oeX+68q8bW2zsz6p+TLBP3TI81OVr0xiuUfJYCJs=
 			</data>
 		</dict>
 		<key>PincruxTableViewCellLandBar.nib</key>
@@ -1157,7 +1157,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9eMd2103rWEUARTXjlT4A5zY+jAyCq5A6frk1g8gt7I=
+			egWoF3E3zuppDvdRANauVYxs3F6ES9ldI9CRstgOgwY=
 			</data>
 		</dict>
 		<key>PincruxTextBannerCellDefault.nib</key>

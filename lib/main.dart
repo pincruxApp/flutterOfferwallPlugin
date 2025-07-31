@@ -172,6 +172,9 @@ class _OfferwallState extends State<Offerwall> {
       // BAR PREMIUM TYPE : 2
       // PREMIUM TYPE : 3
       PincruxOfferwallPlugin.setOfferwallType(offerwallType);
+
+      // (iOS 한정) 충전소 종료가 필요 할 때 요청합니다.
+      // PincruxOfferwallPlugin.closeOfferwall();
     }
 
     return Scaffold(
