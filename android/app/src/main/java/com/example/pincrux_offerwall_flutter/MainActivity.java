@@ -5,6 +5,8 @@ import android.content.Intent;
 import androidx.annotation.NonNull;
 
 import com.pincrux.offerwall.PincruxOfferwall;
+import com.pincrux.offerwall.util.point.impl.PincruxAdPointImpl;
+import com.pincrux.offerwall.util.point.model.PincruxAdPointInfo;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -14,6 +16,9 @@ import io.flutter.embedding.engine.FlutterEngine;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugins.GeneratedPluginRegistrant;
+
+import java.util.Map;
+import java.util.HashMap;
 
 public class MainActivity extends FlutterActivity {
     private static final String methodChannelName = "com.pincrux.offerwall.flutter";
@@ -102,6 +107,31 @@ public class MainActivity extends FlutterActivity {
                         case "setDarkMode": {
                             int darkmode = call.argument("mode");
                             offerwall.setDarkMode(darkmode);
+                            break;
+                        }
+
+                        case "setOfferwallCategory": {
+                            int category = call.argument("category");
+                            offerwall.setOfferwallCategory(category);
+                            break;
+                        }
+
+                        case "getAdPoint": {
+                            String pubkey = call.argument("pubkey");
+                            offerwall.getAdPoint(MainActivity.this, pubkey, new PincruxAdPointImpl() {
+                                @Override
+                                public void onReceivePoint(PincruxAdPointInfo pincruxAdPointInfo) {
+                                    if (pincruxAdPointInfo != null) {
+                                        Map<String, Object> map = new HashMap<>();
+                                        map.put("financePoint", pincruxAdPointInfo.getFinancePoint()); // 금융 포인트
+                                        map.put("socialPoint", pincruxAdPointInfo.getSocialPoint()); // 소셜 포인트
+                                        map.put("cpaPoint", pincruxAdPointInfo.getCpaPoint()); // 참여 포인트
+                                        map.put("cpsPoint", pincruxAdPointInfo.getCpsPoint()); // 구매 포인트
+                                        map.put("gamePoint", pincruxAdPointInfo.getGamePoint()); // 게임 포인트(SDK 버전 2.1.8이상)
+                                        result.success(map);
+                                    }
+                                }
+                            });
                             break;
                         }
 
