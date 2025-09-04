@@ -17,9 +17,6 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugins.GeneratedPluginRegistrant;
 
-import java.util.Map;
-import java.util.HashMap;
-
 public class MainActivity extends FlutterActivity {
     private static final String methodChannelName = "com.pincrux.offerwall.flutter";
 
