@@ -1,0 +1,1 @@
+ /Users/melo/Documents/GitHub/flutterOfferwallPlugin/.dart_tool/flutter_build/b13bb80802bfe5ff9209d8818f3d3a12/dart_build_result.json: 
