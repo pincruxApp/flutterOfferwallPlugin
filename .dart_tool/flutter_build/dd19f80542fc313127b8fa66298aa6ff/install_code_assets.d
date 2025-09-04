@@ -1,1 +1,0 @@
- /Users/melo/Documents/GitHub/flutterOfferwallPlugin/.dart_tool/flutter_build/dd19f80542fc313127b8fa66298aa6ff/native_assets.json: 

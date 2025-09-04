@@ -134,6 +134,8 @@ import PincruxOfferwall
                    let args = call.arguments as? Dictionary<String, Any>,
                    let category = args["category"] as? Int {
                     switch category {
+                    case 1 :
+                        self.offerwall?.setOfferwallCategory(.Finance)
                     case 2 :
                         self.offerwall?.setOfferwallCategory(.CPA)
                     case 3 :
@@ -142,10 +144,8 @@ import PincruxOfferwall
                         self.offerwall?.setOfferwallCategory(.CPS)
                     case 5 :
                         self.offerwall?.setOfferwallCategory(.Game)
-                    case 1:
-                        fallthrough
-                    default:
-                        self.offerwall?.setOfferwallCategory(.Finance)
+                    default :
+                        break
                     }
                 }
 
