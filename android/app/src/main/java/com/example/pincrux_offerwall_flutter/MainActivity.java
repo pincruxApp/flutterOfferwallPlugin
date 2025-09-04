@@ -121,15 +121,7 @@ public class MainActivity extends FlutterActivity {
                             offerwall.getAdPoint(MainActivity.this, pubkey, new PincruxAdPointImpl() {
                                 @Override
                                 public void onReceivePoint(PincruxAdPointInfo pincruxAdPointInfo) {
-                                    if (pincruxAdPointInfo != null) {
-                                        Map<String, Object> map = new HashMap<>();
-                                        map.put("financePoint", pincruxAdPointInfo.getFinancePoint()); // 금융 포인트
-                                        map.put("socialPoint", pincruxAdPointInfo.getSocialPoint()); // 소셜 포인트
-                                        map.put("cpaPoint", pincruxAdPointInfo.getCpaPoint()); // 참여 포인트
-                                        map.put("cpsPoint", pincruxAdPointInfo.getCpsPoint()); // 구매 포인트
-                                        map.put("gamePoint", pincruxAdPointInfo.getGamePoint()); // 게임 포인트(SDK 버전 2.1.8이상)
-                                        result.success(map);
-                                    }
+                                    result.success(pincruxAdPointInfo.getAdPointMap());
                                 }
                             });
                             break;
