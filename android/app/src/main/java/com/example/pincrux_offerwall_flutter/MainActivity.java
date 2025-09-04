@@ -109,24 +109,7 @@ public class MainActivity extends FlutterActivity {
 
                         case "setOfferwallCategory": {
                             int category = call.argument("category");
-                            switch (category) {
-                                case 2:
-                                    offerwall.setOfferwallCategory(PincruxOfferwall.CATEGORY_CPA);
-                                    break;
-                                case 3:
-                                    offerwall.setOfferwallCategory(PincruxOfferwall.CATEGORY_SOCIAL);
-                                    break;
-                                case 4:
-                                    offerwall.setOfferwallCategory(PincruxOfferwall.CATEGORY_CPS);
-                                    break;
-                                case 5:
-                                    offerwall.setOfferwallCategory(PincruxOfferwall.CATEGORY_GAME);
-                                    break;
-                                case 1:
-                                default:
-                                    offerwall.setOfferwallCategory(PincruxOfferwall.CATEGORY_FINANCE);
-                                    break;
-                            }
+                            offerwall.setOfferwallCategory(category);
                             break;
                         }
 
