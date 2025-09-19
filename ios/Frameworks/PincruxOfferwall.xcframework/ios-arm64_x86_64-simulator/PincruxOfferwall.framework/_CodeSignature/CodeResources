@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		7MykmQ/QbMqwMyHHH9Cdm+5Fu88=
+		N0DHiT+rc6V497eTa7tTD5yxi1E=
 		</data>
 		<key>BasicNavigationView.nib</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hczwff6ZqVAeoMM0+KrF8fuVjF8=
+		JCw3GN1LOXcOYXz/ip5YiCJd6SI=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		yPURawNi11yIztbZK3T8G4m+VA4=
+		KKDhOATT2GwRxF6N1vGwSFjR1eg=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		huveEd6MgO8cbyesP+if+/mYcHA=
+		XvyrBEOaiLzmSPSe7RIANCj+eck=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		yPURawNi11yIztbZK3T8G4m+VA4=
+		KKDhOATT2GwRxF6N1vGwSFjR1eg=
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AUpNwd1GKp4ht0hJEzF1ob6YRiA=
+		qrgIFwi92T3tL3FpPO3MxbSkuSI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>PincruxContactStoryBoard.storyboardc/3c2-fH-rxY-view-2Yk-6Y-sEu.nib</key>
 		<data>
-		ngKsTh8YueNs2d3ZPjoPHNiawO0=
+		PZ+xHyqd+EJagWscsD35OaBgZG4=
 		</data>
 		<key>PincruxContactStoryBoard.storyboardc/Info.plist</key>
 		<data>
@@ -348,13 +348,9 @@
 		<data>
 		LSr9WdxMrZyw2WdAZgrQQt04n/k=
 		</data>
-		<key>PincruxTermsViewDefault.nib</key>
+		<key>PincruxTermsView.nib</key>
 		<data>
-		/FGsQfJnHi/W+ESI4b33K0qmV2c=
-		</data>
-		<key>PincruxTermsViewNaverpay.nib</key>
-		<data>
-		sSzvvCsu4xfNNsI/D08N2MW4Xls=
+		dJYISqfyrurHZUzbO3b/xIN1xPc=
 		</data>
 		<key>PincruxTextBannerCellDefault.nib</key>
 		<data>
@@ -528,7 +524,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ThqpthODgNHWJOKSMFEWvOPanxQ=
+			i8IX2a51rMoOgA3X38+A9b7mcoE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -540,7 +536,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xh3ydj8CcD+TfTZgCWZgF14b2FMMRdE7wsoaok/cpso=
+			tfZepFpnrOP3m6dfxUTDOkObbG/RbiqCbrcZw8HCuN4=
 			</data>
 		</dict>
 		<key>BasicNavigationView.nib</key>
@@ -575,7 +571,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1ZLZK4yfBoKPcPXIZokPxGz0ShTcMaW6fK6Ekmhp5ng=
+			bLnIl8/SbgXndEH7RouS782CseHkRkyHmvffxntAsl4=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -603,14 +599,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SaGE1E9B6VuRFqYxS4qm3braOIiDDb7z+ElC6qtCWFQ=
+			1Y7O4sWnriKsplLR3Wl5CBoel2v0yfgL7m9FAczDu2o=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1ZLZK4yfBoKPcPXIZokPxGz0ShTcMaW6fK6Ekmhp5ng=
+			bLnIl8/SbgXndEH7RouS782CseHkRkyHmvffxntAsl4=
 			</data>
 		</dict>
 		<key>Modules/PincruxOfferwall.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -638,7 +634,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pSE0tv5t70GxbpIYLJcyuFOt3IRrJWNFnf4IAYGWgAM=
+			3frW/dXPNox2KGs9tU4KhE/YZz7t5fRd73V8huk3Avc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -694,7 +690,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9BBKWZxJFvIsxPJ4pHx0sMgKH5FB2Kjn/e4/gwCcnEs=
+			ZkxrgrnFjfj5EF4D6XfaSKmncrIE1DNOR2wRUUYPLP8=
 			</data>
 		</dict>
 		<key>PincruxContactStoryBoard.storyboardc/Info.plist</key>
@@ -1131,18 +1127,11 @@
 			xFO87dyOzgFTvSuD8F+u2HHzu6BBOdXIDlByVcBC4pE=
 			</data>
 		</dict>
-		<key>PincruxTermsViewDefault.nib</key>
+		<key>PincruxTermsView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vgtpgYubPDW3B9yQo6eohwT9tftbAgRPedz40eu6U9U=
-			</data>
-		</dict>
-		<key>PincruxTermsViewNaverpay.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VUYoBq6IkNqOknseCeFm5o93DstVVR9/IhTszLsQOTM=
+			egWoF3E3zuppDvdRANauVYxs3F6ES9ldI9CRstgOgwY=
 			</data>
 		</dict>
 		<key>PincruxTextBannerCellDefault.nib</key>
@@ -1443,7 +1432,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LTxfsStd6Sv1BeAFBy5bUoyaWwnX+fnUKTrixVW4Bxk=
+			X8pBQMcCPktvjRJ8uUN+1D81VDQ9YBtBIPasdL3QbAc=
 			</data>
 			<key>optional</key>
 			<true/>
