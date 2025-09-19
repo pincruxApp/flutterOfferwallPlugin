@@ -1,199 +1,22 @@
 import UIKit
 @preconcurrency import Flutter
-import PincruxOfferwall
 
 @main
 @objc class AppDelegate: FlutterAppDelegate {
-    var offerwall: PincruxOfferwallSDK?
-    private var categoryPoint: FlutterResult?
+    var offerwallHandler: OfferwallMethodHandler?
 
     override func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         let controller: FlutterViewController = window?.rootViewController as! FlutterViewController
-        let methodChannel = FlutterMethodChannel(name: "com.pincrux.offerwall.flutter", binaryMessenger: controller.binaryMessenger)
-
-        methodChannel.setMethodCallHandler({
-            (call: FlutterMethodCall, result: @escaping FlutterResult) -> Void in
-
-            switch (call.method) {
-            case "init":
-                if let args = call.arguments as? Dictionary<String, Any>,
-                   let pubkey = args["pubkey"] as? String,
-                   let usrkey = args["usrkey"] as? String {
-                    self.offerwall = PincruxOfferwallSDK.initWithPubkeyAndUsrkey(pubkey, usrkey)
-                }
-
-            case "setOfferwallViewControllerType":
-                if self.isOfferwallNotNil(),
-                   let args = call.arguments as? Dictionary<String, Any>,
-                   let type = args["type"] as? Int {
-                    if type == 1 {
-                        self.offerwall?.setViewControllerType(.Modal)
-                    } else if type == 2 {
-                        self.offerwall?.setViewControllerType(.ViewType)
-                    }
-                }
-
-            case "startOfferwall":
-                if self.isOfferwallNotNil() {
-                    self.offerwall?.startOfferwall(vc: controller)
-                }
-
-            case "startPincruxOfferwallViewType":
-                if self.isOfferwallNotNil() {
-                    let viewtypeVC = UIViewController(nibName: "ViewTypeViewController", bundle: nil) as? ViewTypeViewController ?? ViewTypeViewController()
-                    controller.modalPresentationStyle = .fullScreen
-                    controller.present(viewtypeVC, animated: true)
-                }
-
-            case "startPincruxOfferwallAdDetail":
-                if self.isOfferwallNotNil(),
-                   let args = call.arguments as? Dictionary<String, Any>,
-                   let appkey = args["appkey"] as? String {
-                    self.offerwall?.startOfferwallDetailVC(vc: controller, appKey: appkey)
-                }
-
-            case "startPincruxOfferwallContact":
-                if self.isOfferwallNotNil() {
-                    self.offerwall?.startOfferwallContactVC(vc: controller)
-                }
-
-            case "setOfferwallType":
-                if self.isOfferwallNotNil(),
-                   let args = call.arguments as? Dictionary<String, Any>,
-                   let type = args["type"] as? Int {
-                    if type == 2 {
-                        self.offerwall?.setOfferwallType(.BAR_PREMIUM_TYPE)
-                    } else if type == 3 {
-                        self.offerwall?.setOfferwallType(.PREMIUM_TYPE)
-                    } else {
-                        self.offerwall?.setOfferwallType(.BAR_TYPE)
-                    }
-                }
-
-            case "setEnableTab":
-                if self.isOfferwallNotNil(),
-                   let args = call.arguments as? Dictionary<String, Any>,
-                   let isEnable = args["isEnable"] as? Bool {
-                    self.offerwall?.setEnableTab(isEnable)
-                }
-
-            case "setOfferwallTitle":
-                if self.isOfferwallNotNil(),
-                   let args = call.arguments as? Dictionary<String, Any>,
-                   let title = args["title"] as? String {
-                    self.offerwall?.setOfferwallTitle(title)
-                }
-
-            case "setOfferwallThemeColor":
-                if self.isOfferwallNotNil(),
-                   let args = call.arguments as? Dictionary<String, Any>,
-                   let color = args["color"] as? String {
-                    self.offerwall?.setThemeColor(color)
-                }
-
-            case "setEnableScrollTopButton":
-                if self.isOfferwallNotNil(),
-                   let args = call.arguments as? Dictionary<String, Any>,
-                   let isEnable = args["isEnable"] as? Bool {
-                    self.offerwall?.setEnableScrollTopButton(isEnable)
-                }
-
-            case "setAdDetail":
-                if self.isOfferwallNotNil(),
-                   let args = call.arguments as? Dictionary<String, Any>,
-                   let isEnable = args["isEnable"] as? Bool {
-                    self.offerwall?.setAdDetail(isEnable)
-                }
-
-            case "setDisableCPS":
-                if self.isOfferwallNotNil(),
-                   let args = call.arguments as? Dictionary<String, Any>,
-                   let isDisable = args["isDisable"] as? Bool {
-                    self.offerwall?.setDisableCPS(isDisable)
-                }
-
-            case "setDarkMode":
-                if self.isOfferwallNotNil(),
-                   let args = call.arguments as? Dictionary<String, Any>,
-                   let mode = args["mode"] as? Int {
-                    switch mode {
-                    case 1 :
-                        self.offerwall?.setDarkMode(.LIGHT_ONLY)
-                    case 2 :
-                        self.offerwall?.setDarkMode(.DARK_ONLY)
-                    default :
-                        self.offerwall?.setDarkMode(.AUTO)
-                    }
-                }
-
-            case "setOfferwallCategory":
-                if self.isOfferwallNotNil(),
-                   let args = call.arguments as? Dictionary<String, Any>,
-                   let category = args["category"] as? Int {
-                    switch category {
-                    case 2 :
-                        self.offerwall?.setOfferwallCategory(.CPA)
-                    case 3 :
-                        self.offerwall?.setOfferwallCategory(.Social)
-                    case 4 :
-                        self.offerwall?.setOfferwallCategory(.CPS)
-                    case 5 :
-                        self.offerwall?.setOfferwallCategory(.Game)
-                    case 1:
-                        fallthrough
-                    default:
-                        self.offerwall?.setOfferwallCategory(.Finance)
-                    }
-                }
-
-            case "closeOfferwall":
-                if self.isOfferwallNotNil() {
-                    self.offerwall?.closeOfferwall()
-                }
-
-            case "getAdPoint":
-                if self.isOfferwallNotNil(),
-                   let args = call.arguments as? Dictionary<String, Any>,
-                   let pubkey = args["pubkey"] as? String {
-                    self.offerwall?.pointDelegate = self
-                    Task {
-                        await self.offerwall?.getAdPoint(pubkey)
-                    }
-                    self.categoryPoint = result
-                }
-            default:
-                result(FlutterMethodNotImplemented)
-            }
-        })
+        let offerwallChannel = FlutterMethodChannel(name: "com.pincrux.offerwall.flutter", binaryMessenger: controller.binaryMessenger)
+        offerwallHandler = OfferwallMethodHandler(controller: controller)
+        offerwallChannel.setMethodCallHandler { [weak self] (call, result) in
+            self?.offerwallHandler?.handle(call: call, result: result)
+        }
 
         GeneratedPluginRegistrant.register(with: self)
         return super.application(application, didFinishLaunchingWithOptions: launchOptions)
-    }
-
-    private func isOfferwallNotNil() -> Bool {
-        if self.offerwall != nil {
-            return true
-        } else {
-            return false
-        }
-    }
-}
-
-@objc extension AppDelegate: OfferwallPointDelegate {
-    func getAdPoint(_ point: OfferwallPointItems) async {
-        let result: [String: Any] = [
-            "financePoint": point.financeCoin,
-            "cpaPoint": point.cpaCoin,
-            "socialPoint": point.socialCoin,
-            "cpsPoint": point.cpsCoin,
-            "gamePoint": point.gameCoin
-        ]
-
-        DispatchQueue.main.async {
-            self.categoryPoint?(result)
-        }
     }
 }
