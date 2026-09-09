@@ -1,1 +1,48 @@
-/ios/Pods
+# Miscellaneous
+*.class
+*.log
+*.swp
+.DS_Store
+
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Flutter / Dart / Pub
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+pubspec.lock
+
+# Symbolication / Obfuscation
+app.*.symbols
+app.*.map.json
+
+# Android
+/android/.gradle/
+/android/.cxx/
+/android/build/
+/android/app/build/
+/android/local.properties
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# iOS
+/ios/Pods/
+/ios/.symlinks/
+/ios/build/
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_export_environment.sh
+/ios/Flutter/ephemeral/
+/ios/Flutter/Flutter.podspec
+/ios/Flutter/.last_build_id
+
+# Xcode 사용자별 설정 (xcshareddata는 공유 대상이므로 제외하지 않음)
+**/xcuserdata/
