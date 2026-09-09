@@ -9,6 +9,10 @@ class PincruxOfferwallPlugin {
     await _channel.invokeListMethod("init", {'pubkey': pubkey, 'usrkey': usrkey});
   }
 
+  // 충전소의 ViewController Type을 설정합니다. (iOS 전용)
+  // 0: Push Type
+  // 1: Modal Type
+  // 2: View Type
   static void setOfferwallViewControllerType(int type) async {
     if (Platform.isIOS) {
       await _channel

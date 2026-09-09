@@ -30,10 +30,15 @@ class OfferwallMethodHandler: NSObject {
         case "setOfferwallViewControllerType":
             if let args = call.arguments as? Dictionary<String, Any>,
                let type = args["type"] as? Int {
-                if type == 1 {
-                    self.offerwall?.setViewControllerType(.Modal)
-                } else if type == 2 {
+                switch type {
+                case 0:
+                    self.offerwall?.setViewControllerType(.NavigationPush)
+                case 2:
                     self.offerwall?.setViewControllerType(.ViewType)
+                case 1:
+                    fallthrough
+                default:
+                    self.offerwall?.setViewControllerType(.Modal)
                 }
             }
 
