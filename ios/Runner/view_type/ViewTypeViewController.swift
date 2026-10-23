@@ -11,6 +11,11 @@ import PincruxOfferwall
 
 class ViewTypeViewController : UIViewController {
     
+    // iPhone Duo(iOS 27.1+): 뷰 타입은 매체 앱 화면 안에 오퍼월을 넣는 방식이라 세로 바는 매체 앱 화면이 정한다.
+    // 이 샘플 화면에서 세로 바를 꺼서 상태바를 위쪽 가로에 둔다.
+    @available(iOS 27.1, *)
+    override var preferredVerticalBarBehavior: UIVerticalBarBehavior { .disabled }
+    
     @IBOutlet weak var yourOfferwallView: UIView!
     
     var offerwall: PincruxOfferwallSDK?

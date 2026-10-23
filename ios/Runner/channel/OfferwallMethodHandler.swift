@@ -10,12 +10,19 @@ import PincruxOfferwall
 import UIKit
 
 class OfferwallMethodHandler: NSObject {
-    private weak var controller: FlutterViewController?
     private var offerwall: PincruxOfferwallSDK?
     private var categoryPoint: FlutterResult?
 
-    init(controller: FlutterViewController) {
-        self.controller = controller
+    /// 오퍼월을 띄울 기준 화면(첫 Flutter 화면).
+    /// UIScene 방식에서는 채널을 등록하는 시점에 아직 화면이 없을 수 있어서,
+    /// 시작 때 붙잡아 두지 않고 오퍼월을 띄우는 순간 현재 화면에서 찾는다.
+    @MainActor private var controller: FlutterViewController? {
+        let windowScenes = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }
+        let window = windowScenes.flatMap { $0.windows }.first { $0.isKeyWindow }
+            ?? windowScenes.first?.windows.first
+        let root = window?.rootViewController
+        if let flutterVC = root as? FlutterViewController { return flutterVC }
+        return (root as? UINavigationController)?.viewControllers.first as? FlutterViewController
     }
 
     @MainActor func handle(call: FlutterMethodCall, result: @escaping FlutterResult) {
