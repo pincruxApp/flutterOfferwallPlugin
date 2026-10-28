@@ -2,29 +2,33 @@ import UIKit
 @preconcurrency import Flutter
 
 @main
-@objc class AppDelegate: FlutterAppDelegate, @preconcurrency FlutterImplicitEngineDelegate {
+@objc class AppDelegate: FlutterAppDelegate {
     var offerwallHandler: OfferwallMethodHandler?
 
     override func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        // 화면 구성(첫 화면을 내비게이션으로 감싸기)은 SceneDelegate 에서 한다.
-        // 채널·플러그인 등록은 Flutter 엔진이 준비된 뒤 아래 콜백에서 한다.
-        return super.application(application, didFinishLaunchingWithOptions: launchOptions)
-    }
+        
+        // 1. guard let을 사용하여 window와 controller를 안전하게 가져온다.
+        guard let flutterVC = window?.rootViewController as? FlutterViewController else {
+          fatalError("rootViewController is not a FlutterViewController")
+        }
 
-    // UIScene 방식에서는 Flutter 엔진이 씬 연결 뒤에 만들어지므로,
-    // 엔진이 준비됐다는 이 신호를 받은 다음에 플러그인과 Offerwall 채널을 등록한다.
-    func didInitializeImplicitFlutterEngine(_ engineBridge: FlutterImplicitEngineBridge) {
-        GeneratedPluginRegistrant.register(with: engineBridge.pluginRegistry)
+        // FlutterVC를 UINavigationController로 감싸 SDK(.NavigationPush) push가 가능하도록 한다.
+        // SDK가 자체 NavBar를 그리므로 UINavigationController의 NavBar는 항상 숨김 처리한다.
+        let navController = UINavigationController(rootViewController: flutterVC)
+        navController.setNavigationBarHidden(true, animated: false)
+        window?.rootViewController = navController
 
         // Offerwall 채널 등록
-        let offerwallChannel = FlutterMethodChannel(name: "com.pincrux.offerwall.flutter",
-                                                    binaryMessenger: engineBridge.applicationRegistrar.messenger())
-        offerwallHandler = OfferwallMethodHandler()
+        let offerwallChannel = FlutterMethodChannel(name: "com.pincrux.offerwall.flutter", binaryMessenger: flutterVC.binaryMessenger)
+        offerwallHandler = OfferwallMethodHandler(controller: flutterVC)
         offerwallChannel.setMethodCallHandler { [weak self] (call, result) in
             self?.offerwallHandler?.handle(call: call, result: result)
         }
+
+        GeneratedPluginRegistrant.register(with: flutterVC)
+        return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 }
